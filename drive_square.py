@@ -23,11 +23,11 @@ to sleep for "secs" seconds (replace with desired number of seconds).
 for i in range (3):
     # drive
     for i in range(4):
-        robot.drive(10, 0, 0) 
+        robot.drive(2, 0, 0) 
         time.sleep(3)
         # turn
         robot.drive(0, 0, 90) 
-        time.sleep(.1)
+        time.sleep(3)
 
 
 
