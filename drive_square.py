@@ -1,3 +1,4 @@
+import os
 import time
 from mbot_bridge.api import MBot
 
@@ -19,5 +20,18 @@ direction (vy), and the angular velocity (wz). You can also use this code:
 
 to sleep for "secs" seconds (replace with desired number of seconds).
 """
+for i in range (3):
+    # drive
+    for i in range(4):
+        robot.drive(10, 0, 0) 
+        time.sleep(3)
+        # turn
+        robot.drive(0, 0, 90) 
+        time.sleep(.1)
 
+
+
+os.kill(os.getpid(), signal.SIGINT)
 robot.stop()
+
+
