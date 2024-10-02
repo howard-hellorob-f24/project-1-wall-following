@@ -19,7 +19,7 @@ direction (vy), and the angular velocity (wz). You can also use this code:
     time.sleep(secs);
 
 to sleep for "secs" seconds (replace with desired number of seconds).
-"""
+
 for i in range (3):
     # drive
     for i in range(4):
@@ -32,6 +32,14 @@ for i in range (3):
 
 
 os.kill(os.getpid(), signal.SIGINT)
+"""
+#should make a right turn 
+robot.drive(2,0,0)
+time.sleep(3)
+robot.drive(0,0,90)
+time.sleep(3)
+robot.drive(2,0,0)
+
 robot.stop()
 
 

@@ -15,6 +15,7 @@ def find_min_dist(ranges, thetas):
     Returns:
         tuple: The length and angle of the shortest ray in the Lidar scan.
     """
+    robot.read_lidar_scan(ranges)
     min_dist, min_angle = None, None
 
     # TODO: Find the length and angle of the shortest distance in the ray.
