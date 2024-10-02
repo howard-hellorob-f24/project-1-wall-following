@@ -33,12 +33,17 @@ for i in range (3):
 
 os.kill(os.getpid(), signal.SIGINT)
 """
-#should make a right turn 
-robot.drive(2,0,0)
-time.sleep(3)
-robot.drive(0,0,90)
-time.sleep(3)
-robot.drive(2,0,0)
+#should make a right turn
+
+try:
+    while True:
+        robot.drive(2,0,0)
+        time.sleep(3)
+        robot.drive(0,0,90)
+        time.sleep(3)
+        robot.drive(2,0,0)
+except KeyboardInterrupt:
+    print("Control+C pressed.")
 
 robot.stop()
 
