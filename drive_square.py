@@ -44,7 +44,7 @@ try:
        #time.sleep(1)
        robot.drive(.2,0,0)
        time.sleep(1)
-       robot.drive(0,0,1.57)
+       robot.drive(0,0,1)
        time.sleep(1)
 
 
