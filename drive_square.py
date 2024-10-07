@@ -36,14 +36,23 @@ os.kill(os.getpid(), signal.SIGINT)
 #should make a right turn
 
 try:
-    while True:
-        robot.drive(2,0,0)
-        time.sleep(3)
-        robot.drive(0,0,90)
-        time.sleep(3)
-        robot.drive(2,0,0)
+   while True:
+       #robot.drive(.2,0,0)
+       #time.sleep(1)
+       # print("about to turn")
+       #robot.drive(0,0,0)
+       #time.sleep(1)
+       robot.drive(.2,0,0)
+       time.sleep(1)
+       robot.drive(0,0,1.57)
+       time.sleep(1)
+
+
+       #robot.drive(0,0,0)
+       #time.sleep(1)
+
 except KeyboardInterrupt:
-    print("Control+C pressed.")
+   print("Control+C pressed.")
 
 robot.stop()
 
